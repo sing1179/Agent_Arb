@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Convenience launcher for AI Arbitrage Agent."""
+"""Convenience launcher for Agent Arb (Prediction Market Arbitrage Agent)."""
 import sys
 from pathlib import Path
 
-# Ensure arb_agent root is on path
+# Ensure project root is on path
 root = Path(__file__).resolve().parent
 sys.path.insert(0, str(root))
 

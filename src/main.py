@@ -1,6 +1,7 @@
 """
-AI Arbitrage Agent - Main entry point.
-Run 24/7 with asyncio + periodic scheduler.
+Agent Arb - Prediction Market Arbitrage Agent
+Main entry point. Run 24/7 with asyncio + periodic scheduler.
+Responds to "arb" for short.
 """
 import argparse
 import asyncio
@@ -81,7 +82,7 @@ async def run_scan_cycle() -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Prediction Market Arbitrage Agent")
+    parser = argparse.ArgumentParser(description="Agent Arb - Prediction Market Arbitrage Agent (responds to 'arb')")
     parser.add_argument("--mode", choices=["sim", "live"], default="sim")
     parser.add_argument("--capital", type=float, default=None, help="Max capital USD")
     parser.add_argument("--no-dashboard", action="store_true", help="Disable dashboard")

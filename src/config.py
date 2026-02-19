@@ -1,5 +1,5 @@
 """
-Configuration loader for Prediction Market Arbitrage Agent.
+Configuration loader for Agent Arb (Prediction Market Arbitrage Agent).
 Loads from .env - NEVER hardcode API keys.
 """
 import os
